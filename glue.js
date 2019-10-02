@@ -27,4 +27,4 @@ renderMathInElement(document.body);
 window.setInterval(function(){
   /// call your function here
 renderMathInElement(document.body);
-}, 10000);
+}, 1000);

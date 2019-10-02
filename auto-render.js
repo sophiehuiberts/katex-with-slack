@@ -281,7 +281,10 @@ var renderElem = function renderElem(elem, optionsCopy) {
           return className.indexOf(' ' + x + ' ') === -1;
         });
 
-	shouldRender = shouldRender && !childNode.className.includes("message_input");
+	try {
+		shouldRender = shouldRender && !childNode.className.includes("message_input");
+	} catch(e) {
+	}
 
         if (shouldRender) {
           renderElem(childNode, optionsCopy);
