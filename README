@@ -1,1 +1,10 @@
 Injects KaTeX into Slack.
+
+
+Math:
+\( .. \)
+$$ .. $$
+
+Display:
+\[ .. \]
+$$$ .. $$$

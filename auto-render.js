@@ -281,6 +281,8 @@ var renderElem = function renderElem(elem, optionsCopy) {
           return className.indexOf(' ' + x + ' ') === -1;
         });
 
+	shouldRender = shouldRender && !childNode.className.includes("message_input");
+
         if (shouldRender) {
           renderElem(childNode, optionsCopy);
         }
@@ -304,10 +306,15 @@ var renderMathInElement = function renderMathInElement(elem, options) {
   } // default options
 
 
-  optionsCopy.delimiters = optionsCopy.delimiters || [{
+  optionsCopy.delimiters = optionsCopy.delimiters || [
+  {
+    left: "$$$",
+    right: "$$$",
+    display: true 
+  }, {
     left: "$$",
     right: "$$",
-    display: true
+    display: false 
   }, {
     left: "\\(",
     right: "\\)",
