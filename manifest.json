@@ -1,0 +1,11 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "*://*.slack.com/*" ]
+   } ],
+   "description": "Inject KaTeX on Slack pages",
+   "manifest_version": 2,
+   "name": "katex-with-slackb",
+   "version": "0.1"
+}
