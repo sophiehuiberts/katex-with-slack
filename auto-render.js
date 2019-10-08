@@ -282,8 +282,7 @@ var renderElem = function renderElem(elem, optionsCopy) {
         });
 
 	try {
-	  shouldRender = shouldRender && !childNode.className.includes("message_input");
-	  shouldRender = shouldRender && !childNode.className.includes("c-message--editing");
+	  shouldRender = shouldRender && !childNode.className.includes("ql-editor");
 	} catch(e) {
 	}
 
