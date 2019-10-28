@@ -8,3 +8,16 @@ $$ .. $$
 Display:
 \[ .. \]
 $$$ .. $$$
+
+
+Note that the asterisk * is Slack's boldface boundary.
+To use an asterisk in math mode, escape using \\.
+Like this: $$\bar\chi^{\\*}$$. 
+
+
+Compiled binaries are available.
+Chrome:
+https://sophie.huiberts.me/files/katex-with-slack.crx
+Firefox:
+https://sophie.huiberts.me/files/katex-with-slack.xpi
+
