@@ -27,3 +27,9 @@ https://sophie.huiberts.me/files/katex-with-slack.crx
 Firefox:
 https://sophie.huiberts.me/files/katex-with-slack.xpi
 
+For Chrome:
+Download the file.
+Go to the extensions page, enable developer mode,
+drag the file from a file browser onto the extensions page.
+
+Firefox should automatically ask to install after downloading.
