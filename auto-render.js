@@ -283,6 +283,7 @@ var renderElem = function renderElem(elem, optionsCopy) {
 
 	try {
 	  shouldRender = shouldRender && !childNode.className.includes("ql-editor");
+	  shouldRender = shouldRender && !childNode.className.includes("message__editor");
 	} catch(e) {
 	}
 

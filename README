@@ -1,6 +1,12 @@
 Injects KaTeX into Slack.
 
 
+Plugin by Sophie Huiberts and Bento Natura
+katex.js is from the KaTeX project.
+auto-render.js is adapted from the KaTeX project.
+
+
+
 Math:
 \( .. \)
 $$ .. $$
