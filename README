@@ -31,5 +31,8 @@ For Chrome:
 Download the file.
 Go to the extensions page, enable developer mode,
 drag the file from a file browser onto the extensions page.
+If unsuccesful, download the xpi file above, unpack it (it is a zip file),
+and use the option "load unpacked"
 
-Firefox should automatically ask to install after downloading.
+For Firefox:
+After downloading the plugin, your browser should automatically ask to install.
