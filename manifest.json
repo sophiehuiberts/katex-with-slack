@@ -7,5 +7,5 @@
    "description": "Inject KaTeX on Slack pages",
    "manifest_version": 2,
    "name": "katex-with-slackb",
-   "version": "0.1"
+   "version": "0.3"
 }

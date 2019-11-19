@@ -284,6 +284,8 @@ var renderElem = function renderElem(elem, optionsCopy) {
 	try {
 	  shouldRender = shouldRender && !childNode.className.includes("ql-editor");
 	  shouldRender = shouldRender && !childNode.className.includes("message__editor");
+	  shouldRender = shouldRender && !childNode.className.includes("popover");
+	  shouldRender = shouldRender && !childNode.className.includes("actions_menu");
 	} catch(e) {
 	}
 
