@@ -1,17 +1,17 @@
-Injects KaTeX into Slack.
+Renders LaTeX math formulas in Slack
 
 
-Plugin by Sophie Huiberts and Bento Natura
+Plugin by Sophie Huiberts and Bento Natura (2019).
 katex.js is from the KaTeX project.
 auto-render.js is adapted from the KaTeX project.
 
 
 
-Math:
+Inline math:
 \( .. \)
 $$ .. $$
 
-Display:
+Display math:
 \[ .. \]
 $$$ .. $$$
 

@@ -281,13 +281,13 @@ var renderElem = function renderElem(elem, optionsCopy) {
           return className.indexOf(' ' + x + ' ') === -1;
         });
 
-	try {
-	  shouldRender = shouldRender && !childNode.className.includes("ql-editor");
-	  shouldRender = shouldRender && !childNode.className.includes("message__editor");
-	  shouldRender = shouldRender && !childNode.className.includes("popover");
-	  shouldRender = shouldRender && !childNode.className.includes("actions_menu");
-	} catch(e) {
-	}
+        try {
+          shouldRender = shouldRender && !childNode.className.includes("ql-editor");
+          shouldRender = shouldRender && !childNode.className.includes("message__editor");
+          shouldRender = shouldRender && !childNode.className.includes("popover");
+          shouldRender = shouldRender && !childNode.className.includes("actions_menu");
+        } catch(e) {
+        }
 
         if (shouldRender) {
           renderElem(childNode, optionsCopy);
@@ -350,5 +350,3 @@ var renderMathInElement = function renderMathInElement(elem, options) {
 /***/ })
 /******/ ])["default"];
 });
-
-renderMathInElement(document.body);
