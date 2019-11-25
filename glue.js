@@ -41,7 +41,7 @@ var LaTeXmessages = function(){
 
 window.setInterval(function(){
 	 LaTeXmessages();
-}, 40);
+}, 400);
 
 
 // Beyond here are the contents of auto-render.js and katex.js
