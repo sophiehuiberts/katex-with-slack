@@ -1,11 +1,11 @@
-Renders LaTeX math formulas in Slack
+Renders LaTeX math formulas in Slack.
+Similar to the Chrome extension math-with-slackb, except this plugin uses
+the KaTeX library instead of MathJax for better compatibility with the
+latest version of Slack.
 
 
-Plugin by Sophie Huiberts and Bento Natura (2019).
-katex.js is from the KaTeX project.
-auto-render.js is adapted from the KaTeX project.
-
-
+Usage instructions:
+Mostly works like plain LaTeX, with the following exceptions.
 
 Inline math:
 \( .. \)
@@ -15,24 +15,28 @@ Display math:
 \[ .. \]
 $$$ .. $$$
 
+Asterisk:
+\\*
 
-Note that the asterisk * is Slack's boldface boundary.
-To use an asterisk in math mode, escape using \\.
-Like this: $$\bar\chi^{\\*}$$. 
+Newline:
+\newline
+
+Blackboard bold letters:
+\R
+\N
+\Z
 
 
-Compiled binaries are available.
-Chrome:
-https://sophie.huiberts.me/files/katex-with-slack.crx
-Firefox:
-https://sophie.huiberts.me/files/katex-with-slack.xpi
 
-For Chrome:
-Download the file.
-Go to the extensions page, enable developer mode,
-drag the file from a file browser onto the extensions page.
-If unsuccesful, download the xpi file above, unpack it (it is a zip file),
-and use the option "load unpacked"
+Plugin by Sophie Huiberts and Bento Natura (2019).
+Licenced under the MIT licence.
 
-For Firefox:
-After downloading the plugin, your browser should automatically ask to install.
+katex.js is taken straight from the KaTeX project, from the url
+https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js
+as indicated by
+https://katex.org/docs/browser.html
+
+auto-render.js is adapted from the KaTeX project:
+https://github.com/KaTeX/KaTeX/blob/master/contrib/auto-render/auto-render.js
+
+This plugin is not associated with the KaTeX project.

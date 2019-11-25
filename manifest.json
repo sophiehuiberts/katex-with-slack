@@ -4,8 +4,9 @@
       "js": [ "content.js" ],
       "matches": [ "*://*.slack.com/*" ]
    } ],
-   "description": "Inject KaTeX on Slack pages",
+   "description": "Render LaTeX in Slack chat.",
    "manifest_version": 2,
-   "name": "katex-with-slackb",
+   "name": "LaTeX in Slack",
+   "short_name": "latex-slack",
    "version": "0.4"
 }

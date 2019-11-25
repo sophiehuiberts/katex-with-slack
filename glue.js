@@ -1,3 +1,5 @@
+// This is from glue.js
+
 // List of classes in which to parse messages
 // There is plenty of duplication, for the sake of
 // being robust against changes in Slack.
@@ -40,3 +42,6 @@ var LaTeXmessages = function(){
 window.setInterval(function(){
 	 LaTeXmessages();
 }, 40);
+
+
+// Beyond here are the contents of auto-render.js and katex.js
