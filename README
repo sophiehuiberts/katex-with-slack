@@ -39,4 +39,5 @@ https://katex.org/docs/browser.html
 auto-render.js is adapted from the KaTeX project:
 https://github.com/KaTeX/KaTeX/blob/master/contrib/auto-render/auto-render.js
 
-This plugin is not associated with the KaTeX project.
+This plugin is not associated with the KaTeX project
+nor with Slack or Slack Technologies, Inc.
