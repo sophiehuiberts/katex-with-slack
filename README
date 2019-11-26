@@ -5,7 +5,7 @@ latest version of Slack.
 
 
 Usage instructions:
-Mostly works like plain LaTeX, with the following exceptions.
+Mostly works like standard LaTeX, with the following exceptions.
 
 Inline math:
 \( .. \)
@@ -21,10 +21,16 @@ Asterisk:
 Newline:
 \newline
 
-Blackboard bold letters:
-\R
-\N
-\Z
+Blackboard bold letter shorthands:
+\R is short for \mathbb{R}
+\N is short for \mathbb{N}
+\Z is short for \mathbb{Z}
+
+
+
+Downloads:
+Firefox: https://addons.mozilla.org/nl/firefox/addon/latex-in-slack/
+Chrome: https://chrome.google.com/webstore/detail/latex-in-slack/pfcfelfnpbnboelkjedecjipaibpnfja
 
 
 
