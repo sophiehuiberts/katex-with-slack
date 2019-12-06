@@ -15,9 +15,6 @@ Display math:
 \[ .. \]
 $$$ .. $$$
 
-Asterisk:
-\\*
-
 Newline:
 \newline
 
@@ -31,6 +28,20 @@ Blackboard bold letter shorthands:
 Downloads:
 Firefox: https://addons.mozilla.org/nl/firefox/addon/latex-in-slack/
 Chrome: https://chrome.google.com/webstore/detail/latex-in-slack/pfcfelfnpbnboelkjedecjipaibpnfja
+
+
+Troubleshooting:
+1.
+Slack uses _ for _italics_ and * for *boldface*. This can interfere with your LaTeX formatting if your message
+has multiple underscores or asterisks in it.
+The developers of Slack are not big on having a consistent way to escape these special characters, but you can try:
+a) escaping using two backslashes: $$\bar\chi^{\\*}\\_W$$
+A single backslash is interpreted by the LaTeX rendering library as part of a command, but two of them will be ignored.
+b) putting spaces around it: $$\bar\chi^ *  _ W$$
+
+2.
+Sometimes Slack does something funny to double space "  " making the plugin unable to recognize a piece of LaTeX
+that contains it, like $$\R  $$.
 
 
 
