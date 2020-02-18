@@ -4,13 +4,18 @@
 // There is plenty of duplication, for the sake of
 // being robust against changes in Slack.
 var classesToRender = [
+
+	//Slack
 	 "p-rich_text_block",
 	 "c-message__message_blocks",
 	 "c-message__message_blocks--rich_text",
 	 "c-message__body",
 	 "c-message",
 	 "c-message__content",
-	 "c-message__content--feature_sonic_inputs"
+	 "c-message__content--feature_sonic_inputs",
+
+	 //Riot.im
+	 "mx_EventTile_body",
 ];
 
 
