@@ -286,6 +286,7 @@ var renderElem = function renderElem(elem, optionsCopy) {
           shouldRender = shouldRender && !childNode.className.includes("message__editor");
           shouldRender = shouldRender && !childNode.className.includes("popover");
           shouldRender = shouldRender && !childNode.className.includes("actions_menu");
+          shouldRender = shouldRender && !childNode.className.includes("mx_BasicMessageComposer_input");//For Slack and riot.im input field.
         } catch(e) {
         }
 

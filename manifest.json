@@ -2,7 +2,7 @@
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "content.js" ],
-      "matches": [ "*://*.slack.com/*" ]
+      "matches": [ "*://*.riot.im/*", "*://*.slack.com/*" ]
    } ],
    "description": "Render LaTeX in Slack chat.",
    "manifest_version": 2,
