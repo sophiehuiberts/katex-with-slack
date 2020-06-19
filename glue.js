@@ -18,6 +18,11 @@ var classesToRender = [
 	 "mx_EventTile_body",
 ];
 
+var meta = document.createElement('meta');
+meta.httpEquiv = "Content-Security-Policy";
+meta.content = "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'; font-src 'self' https://* 'unsafe-inline';";
+
+document.head.appendChild(meta)
 
 // Include the katex css file
 var style = document.createElement("link");
@@ -26,6 +31,7 @@ style.href = 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css';
 style.rel = 'stylesheet';
 
 document.head.appendChild(style);
+
 
 // There is some leak somewhere that I cannot track down.
 // Instead of resolving it, we make sure not to call on KaTeX too often.
