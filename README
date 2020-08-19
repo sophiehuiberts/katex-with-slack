@@ -28,7 +28,7 @@ Chrome: tba
 
 Troubleshooting:
 
-Common issues are caused by:
+Common issues:
 1.
 Discord uses _ for _italics_ and * for *boldface*. This can interfere with your LaTeX formatting if your message
 has multiple underscores or asterisks in it.
@@ -36,12 +36,19 @@ has multiple underscores or asterisks in it.
 2.
 Discord assigns special meaning to the backslash \
 
+3.
+Editing is broken. This is a known issue.
+
+
+
 Solutions:
 A.
 play around with spacing, either adding or removing it
 B.
 Add extra backslashes to escape certain characters.
 The rendering engine KaTeX ignores double backslashes, which should help here.
+C.
+Refresh the page.
 
 
 Build instructions:
