@@ -15,8 +15,7 @@ var LaTeXmessages = function(){
 }
 
 window.setInterval(function(){
-	 LaTeXmessages();
-    console.log('bleh');
+    LaTeXmessages();
 }, 400);
 
 
