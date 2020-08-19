@@ -314,13 +314,13 @@ var renderMathInElement = function renderMathInElement(elem, options) {
 
   optionsCopy.delimiters = optionsCopy.delimiters || [
   {
-    left: "$$$",
-    right: "$$$",
-    display: true 
-  }, {
     left: "$$",
     right: "$$",
-    display: false 
+    display: true
+  }, {
+    left: "$",
+    right: "$",
+    display: false
   }, {
     left: "\\(",
     right: "\\)",

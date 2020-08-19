@@ -2,12 +2,13 @@
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "content.js" ],
-      "matches": [ "*://*.slack.com/*" ]
+      "matches": [ "*://*.discord.com/*"]
    } ],
-   "description": "Render LaTeX in Slack chat.",
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Render LaTeX in Discord chat.",
    "manifest_version": 2,
-   "name": "LaTeX in Slack",
-   "short_name": "latex-slack",
+   "name": "LaTeX in Discord",
+   "short_name": "latex-discord",
    "version": "0.4.3",
    "icons": { "32": "icon32.png",
               "48": "icon48.png",
