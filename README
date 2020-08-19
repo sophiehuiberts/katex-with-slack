@@ -1,19 +1,16 @@
-Renders LaTeX math formulas in Slack.
-Similar to the Chrome extension math-with-slackb, except this plugin uses
-the KaTeX library instead of MathJax for better compatibility with the
-latest version of Slack.
-
+Renders LaTeX math formulas in Discord
+Similar to the browser extension Katex-with-Slack, except this plugin is
+for Discord.
 
 Usage instructions:
-Mostly works like standard LaTeX, with the following exceptions.
 
 Inline math:
-\( .. \)
-$$ .. $$
+\\( .. \\)
+$ .. $
 
 Display math:
-\[ .. \]
-$$$ .. $$$
+\\[ .. \\]
+$$ .. $$
 
 Newline:
 \newline
@@ -24,28 +21,35 @@ Blackboard bold letter shorthands:
 \Z is short for \mathbb{Z}
 
 
-
 Downloads:
-Firefox: https://addons.mozilla.org/nl/firefox/addon/latex-in-slack/
-Chrome: https://chrome.google.com/webstore/detail/latex-in-slack/pfcfelfnpbnboelkjedecjipaibpnfja
+Firefox: tba
+Chrome: tba
 
 
 Troubleshooting:
+
+Common issues are caused by:
 1.
-Slack uses _ for _italics_ and * for *boldface*. This can interfere with your LaTeX formatting if your message
+Discord uses _ for _italics_ and * for *boldface*. This can interfere with your LaTeX formatting if your message
 has multiple underscores or asterisks in it.
-The developers of Slack are not big on having a consistent way to escape these special characters, but you can try:
-a) escaping using two backslashes: $$\bar\chi^{\\*}\\_W$$
-A single backslash is interpreted by the LaTeX rendering library as part of a command, but two of them will be ignored.
-b) putting spaces around it: $$\bar\chi^ *  _ W$$
 
 2.
-Sometimes Slack does something funny to double space "  " making the plugin unable to recognize a piece of LaTeX
-that contains it, like $$\R  $$.
+Discord assigns special meaning to the backslash \
+
+Solutions:
+A.
+play around with spacing, either adding or removing it
+B.
+Add extra backslashes to escape certain characters.
+The rendering engine KaTeX ignores double backslashes, which should help here.
+
+
+Build instructions:
+$ make
 
 
 
-Plugin by Sophie Huiberts and Bento Natura (2019).
+Plugin by Sophie Huiberts (2020).
 Licenced under the MIT licence.
 
 katex.js is taken straight from the KaTeX project, from the url
@@ -57,4 +61,4 @@ auto-render.js is adapted from the KaTeX project:
 https://github.com/KaTeX/KaTeX/blob/master/contrib/auto-render/auto-render.js
 
 This plugin is not associated with the KaTeX project
-nor with Slack or Slack Technologies, Inc.
+nor with Discord.
