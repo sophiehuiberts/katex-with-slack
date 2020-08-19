@@ -2,6 +2,7 @@
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "content.js" ],
+      "css": [ "katex.css" ],
       "matches": [ "*://*.slack.com/*" ]
    } ],
    "description": "Render LaTeX in Slack chat.",
