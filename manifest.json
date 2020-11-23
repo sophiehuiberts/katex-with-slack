@@ -8,6 +8,11 @@
    "manifest_version": 2,
    "name": "LaTeX in Slack",
    "short_name": "latex-slack",
+   "options_ui": {
+      "page": "options.html",
+      "open_in_tab": false
+   },
+   "permissions": [ "storage" ],
    "version": "0.4.3",
    "icons": { "32": "icon32.png",
               "48": "icon48.png",
