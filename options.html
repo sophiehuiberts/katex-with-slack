@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Latex-for-slack options</title></head>
+<body>
+  
+  <label for="delimiterstyle">Choose a style of delimiters:</label>
+  <select id="delimiterstyle" name="delimiterstylelist" form="">
+    <option value="A" selected="selected">$$$...$$$ for displayed math, $$...$$ for inline math.</option>
+    <option value="B">$$...$$ for displayed math, $...$ for inline math.</option>
+  </select>
+
+  <div id="status">&nbsp;</div>
+  <button id="save">Save</button>
+  <br />
+  The second option may cause issues if single dollar signs are also used for other purposes, but is more intuitive for many users as it coincides with LaTeX's behavior. The person you correspond with should use the same option value. You may need to refresh the chrome tab where slack is open.
+
+  <script src="options.js"></script>
+</body>
+</html>
