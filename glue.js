@@ -14,14 +14,6 @@ var classesToRender = [
 ];
 
 
-// Include the katex css file
-var style = document.createElement("link");
-style.type = 'text/css';
-style.href = 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css';
-style.rel = 'stylesheet';
-
-document.head.appendChild(style);
-
 // There is some leak somewhere that I cannot track down.
 // Instead of resolving it, we make sure not to call on KaTeX too often.
 var LaTeXmessages = function(delimiterstyle){

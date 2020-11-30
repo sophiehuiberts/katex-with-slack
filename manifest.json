@@ -2,6 +2,7 @@
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "content.js" ],
+      "css": [ "katex.css" ],
       "matches": [ "*://*.slack.com/*" ]
    } ],
    "description": "Render LaTeX in Slack chat.",
@@ -18,7 +19,7 @@
        }
    },
    "permissions": [ "storage" ],
-   "version": "0.4.3",
+   "version": "0.5",
    "icons": { "32": "icon32.png",
               "48": "icon48.png",
              "128": "icon128.png" }
