@@ -12,6 +12,11 @@
       "page": "options.html",
       "open_in_tab": false
    },
+   "browser_specific_settings" : {
+       "gecko": {
+           "id": "{344e6ebd-84a3-422d-8460-b954d1bc6bf8}"
+       }
+   },
    "permissions": [ "storage" ],
    "version": "0.4.3",
    "icons": { "32": "icon32.png",
