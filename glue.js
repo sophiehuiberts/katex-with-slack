@@ -24,7 +24,7 @@ document.head.appendChild(style);
 
 // There is some leak somewhere that I cannot track down.
 // Instead of resolving it, we make sure not to call on KaTeX too often.
-var LaTeXmessages = function(){
+var LaTeXmessages = function(delimiterstyle){
 	 for(var j = 0; j < classesToRender.length; j++)
 	 {
 		  var messages = document.getElementsByClassName(classesToRender[j]);
@@ -32,15 +32,19 @@ var LaTeXmessages = function(){
 		  {
 				if( messages.item(i).triedlatex != true)
 				{
-					 renderMathInElement(messages.item(i));
-					 messages.item(i).triedlatex = true
+					 renderMathInElement(messages.item(i), {}, delimiterstyle);
+					 messages.item(i).triedlatex = true;
 				}
 		  }
 	 }
 }
 
 window.setInterval(function(){
-	 LaTeXmessages();
+	 chrome.storage.sync.get({
+		delimiterstyle: 'A'
+		}, function(items) {
+			LaTeXmessages(items.delimiterstyle);
+		});
 }, 400);
 
 

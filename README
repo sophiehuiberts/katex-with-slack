@@ -5,7 +5,9 @@ latest version of Slack.
 
 
 Usage instructions:
-Mostly works like standard LaTeX, with the following exceptions.
+Mostly works like standard LaTeX.
+
+Default delimiters are as follows (this avoids issues with dollar signs being used for other purposes):
 
 Inline math:
 \( .. \)
@@ -15,6 +17,17 @@ Display math:
 \[ .. \]
 $$$ .. $$$
 
+Alternatively, in the options of the Chrome extension one can also choose to work with the usual LaTeX delimiters:
+
+Inline math:
+\( .. \)
+$ .. $
+
+Display math:
+\[ .. \]
+$$ .. $$
+
+
 Newline:
 \newline
 
@@ -22,7 +35,6 @@ Blackboard bold letter shorthands:
 \R is short for \mathbb{R}
 \N is short for \mathbb{N}
 \Z is short for \mathbb{Z}
-
 
 
 Downloads:
@@ -47,6 +59,8 @@ that contains it, like $$\R  $$.
 
 Plugin by Sophie Huiberts and Bento Natura (2019).
 Licenced under the MIT licence.
+
+Option to choose $/$$/$$$ delimiters in Chrome added by Nicolas Boumal (2020).
 
 katex.js is taken straight from the KaTeX project, from the url
 https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js

@@ -298,7 +298,7 @@ var renderElem = function renderElem(elem, optionsCopy) {
   }
 };
 
-var renderMathInElement = function renderMathInElement(elem, options) {
+var renderMathInElement = function renderMathInElement(elem, options, delimiterstyle) {
   if (!elem) {
     throw new Error("No element provided to render");
   }
@@ -312,30 +312,29 @@ var renderMathInElement = function renderMathInElement(elem, options) {
   } // default options
 
 
-  optionsCopy.delimiters = optionsCopy.delimiters || [
-  {
-    left: "$$$",
-    right: "$$$",
-    display: true 
-  }, {
-    left: "$$",
-    right: "$$",
-    display: false 
-  }, {
-    left: "\\(",
-    right: "\\)",
-    display: false
-  }, // LaTeX uses $…$, but it ruins the display of normal `$` in text:
-  // {left: "$", right: "$", display: false},
-  //  \[…\] must come last in this array. Otherwise, renderMathInElement
-  //  will search for \[ before it searches for $$ or  \(
-  // That makes it susceptible to finding a \\[0.3em] row delimiter and
-  // treating it as if it were the start of a KaTeX math zone.
-  {
-    left: "\\[",
-    right: "\\]",
-    display: true
-  }];
+  var delimitersA = [
+    {left: "$$$", right: "$$$", display: true},
+    {left: "$$",  right: "$$",  display: false},
+    {left: "\\(", right: "\\)", display: false},
+    {left: "\\[", right: "\\]", display: true}
+  ];
+  var delimitersB = [
+    {left: "$$",  right: "$$",  display: true},
+    {left: "$",   right: "$",   display: false},
+    {left: "\\(", right: "\\)", display: false},
+    {left: "\\[", right: "\\]", display: true}
+  ];
+  
+  
+  if(delimiterstyle === 'A') {
+    optionsCopy.delimiters = optionsCopy.delimiters || delimitersA;
+  } else if(delimiterstyle === 'B'){
+	optionsCopy.delimiters = optionsCopy.delimiters || delimitersB;
+  } else {
+    optionsCopy.delimiters = optionsCopy.delimiters || [];
+  }
+
+  
   optionsCopy.ignoredTags = optionsCopy.ignoredTags || ["script", "noscript", "style", "textarea", "pre", "code"];
   optionsCopy.ignoredClasses = optionsCopy.ignoredClasses || [];
   optionsCopy.errorCallback = optionsCopy.errorCallback || console.error; // Enable sharing of global macros defined via `\gdef` between different
