@@ -319,13 +319,14 @@ var renderMathInElement = function renderMathInElement(elem, options, delimiters
     {left: "\\[", right: "\\]", display: true}
   ];
   var delimitersB = [
+    {left: "$$$", right: "$$$", display: true},
     {left: "$$",  right: "$$",  display: true},
     {left: "$",   right: "$",   display: false},
     {left: "\\(", right: "\\)", display: false},
     {left: "\\[", right: "\\]", display: true}
   ];
-  
-  
+
+
   if(delimiterstyle === 'A') {
     optionsCopy.delimiters = optionsCopy.delimiters || delimitersA;
   } else if(delimiterstyle === 'B'){
@@ -334,7 +335,7 @@ var renderMathInElement = function renderMathInElement(elem, options, delimiters
     optionsCopy.delimiters = optionsCopy.delimiters || [];
   }
 
-  
+
   optionsCopy.ignoredTags = optionsCopy.ignoredTags || ["script", "noscript", "style", "textarea", "pre", "code"];
   optionsCopy.ignoredClasses = optionsCopy.ignoredClasses || [];
   optionsCopy.errorCallback = optionsCopy.errorCallback || console.error; // Enable sharing of global macros defined via `\gdef` between different
