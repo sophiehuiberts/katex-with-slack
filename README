@@ -17,7 +17,7 @@ Display math:
 \[ .. \]
 $$$ .. $$$
 
-Alternatively, in the options of the Chrome extension one can also choose to work with the usual LaTeX delimiters:
+Alternatively, in the options of the extension one can also choose to work with the usual LaTeX delimiters:
 
 Inline math:
 \( .. \)
