@@ -1,13 +1,16 @@
 {
    "content_scripts": [ {
+      "matches": [ "*://*.slack.com/*" ],
       "all_frames": true,
-      "js": [ "content.js" ],
-      "matches": [ "*://*.slack.com/*" ]
+      "css": [ "katex.css" ],
+      "js": [ "katex.js", "auto-render.js", "glue.js" ]
    } ],
-   "description": "Render LaTeX in Slack chat.",
    "manifest_version": 2,
    "name": "LaTeX in Slack",
    "short_name": "latex-slack",
+   "description": "Render LaTeX in Slack chat.",
+   "author": "Sophie Huiberts",
+   "homepage_url": "https://github.com/sophiehuiberts/katex-with-slack",
    "options_ui": {
       "page": "options.html",
       "open_in_tab": false
@@ -21,5 +24,6 @@
    "version": "1.0.1",
    "icons": { "32": "icon32.png",
               "48": "icon48.png",
-             "128": "icon128.png" }
+             "128": "icon128.png" },
+    "web_accessible_resources": [ "fonts/*" ]
 }
