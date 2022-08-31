@@ -66,7 +66,7 @@ Licenced under the MIT licence.
 
 
 katex.js, katex.css and auto-render.js and the contents of the fonts directory
-are taken straight from the KaTeX project, from the v0.16.0 tarbal available at
+are taken straight from the KaTeX project, from the v0.16.2 tarbal available at
 https://github.com/KaTeX/KaTeX/releases
 
 This plugin is not associated with the KaTeX project
